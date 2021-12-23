@@ -6,5 +6,6 @@ export default {
     gray_primary: "#efefef",
     gray_secondary: "#e1e1e1",
     green_secondary: "#618c7b",
+    white_primary: "#FFFFFF",
   },
 };
