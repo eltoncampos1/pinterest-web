@@ -12,10 +12,10 @@ export const Container = styled.button<ButtonProps>`
   display: block;
   background: ${(props) => props.buttonBg};
 
-  margin: 8px;
+  margin: 0.5rem;
   cursor: pointer;
   padding: 0.5rem 0.7rem;
-  border-radius: 1rem;
+  border-radius: 1.2rem;
   -webkit-appearance: button;
   transition: filter 0.3s ease-in-out;
 

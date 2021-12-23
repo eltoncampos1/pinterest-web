@@ -19,13 +19,13 @@ export const Header = () => {
     <S.Container>
       <S.LogoContainer>
         <Logo />
-        <S.PinName>Pinterest</S.PinName>
+        <S.PinName> Pinterest</S.PinName>
       </S.LogoContainer>
 
       <S.NavContainer>
         <S.NavLinks>
           {links.map((link) => (
-            <S.Link aria-label={`is para ${link.name}`}>{link.name}</S.Link>
+            <S.Link aria-label={`go to page ${link.name}`}>{link.name}</S.Link>
           ))}
         </S.NavLinks>
 

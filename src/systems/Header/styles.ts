@@ -10,13 +10,11 @@ export const Container = styled.div`
   justify-content: space-between;
 `;
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled.a`
   display: flex;
   align-items: center;
-
+  cursor: pointer;
   margin-right: 2rem;
-  /* @media (max-width: 500px) {
-  } */
 `;
 
 export const PinName = styled.h1`

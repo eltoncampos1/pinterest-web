@@ -9,7 +9,12 @@ export type ButtonProps = {
 
 export const Button = ({ color, buttonBg, children }: ButtonProps) => {
   return (
-    <S.Container buttonBg={buttonBg} color={color} type="button">
+    <S.Container
+      aria-label={String(children)}
+      buttonBg={buttonBg}
+      color={color}
+      type="button"
+    >
       {children}
     </S.Container>
   );
