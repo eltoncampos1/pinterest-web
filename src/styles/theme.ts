@@ -7,5 +7,6 @@ export default {
     gray_secondary: "#e1e1e1",
     green_secondary: "#618c7b",
     white_primary: "#FFFFFF",
+    overlay: "rgba(0,0,0,.7)",
   },
 };
