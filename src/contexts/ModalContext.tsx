@@ -1,9 +1,11 @@
 /* eslint-disable react/jsx-no-constructed-context-values */
-import { createContext, ReactNode, useContext } from "react";
+import { createContext } from "react";
 
 type ModalContextProps = {
-  isOpen: boolean;
-  toggleModal: () => void;
+  isSignupModalOpen: boolean;
+  isLoginModalOpen: boolean;
+  toggleSignupModal: () => void;
+  toggleLoginModal: () => void;
 };
 
 export const ModalContext = createContext({} as ModalContextProps);

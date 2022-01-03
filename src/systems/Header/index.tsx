@@ -17,7 +17,7 @@ const links = [
 ];
 
 export const Header = () => {
-  const { toggleModal } = useDisclosure();
+  const { toggleSignupModal, toggleLoginModal } = useDisclosure();
 
   return (
     <S.Container>
@@ -37,16 +37,16 @@ export const Header = () => {
 
         <S.NavButtons>
           <Button
-            onClick={() => toggleModal()}
+            onClick={toggleLoginModal}
             color={theme.colors.white_primary}
             buttonBg={theme.colors.red_primary}
           >
             Log in
           </Button>
           <Button
-            onClick={() => toggleModal()}
+            onClick={() => toggleSignupModal()}
             color={theme.colors.black_primary}
-            buttonBg={theme.colors.gray_primary}
+            buttonBg={theme.colors.gray_100}
           >
             Sign up
           </Button>

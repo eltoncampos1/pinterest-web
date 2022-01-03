@@ -7,12 +7,21 @@ type ModalProviderProps = {
 };
 
 export const ModalProvider = ({ children }: ModalProviderProps) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isSignupModalOpen, setIsSignupModalOpen] = useState(false);
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
 
-  const toggleModal = () => setIsOpen(!isOpen);
+  const toggleSignupModal = () => setIsSignupModalOpen(!isSignupModalOpen);
+  const toggleLoginModal = () => setIsLoginModalOpen(!isLoginModalOpen);
 
   return (
-    <ModalContext.Provider value={{ isOpen, toggleModal }}>
+    <ModalContext.Provider
+      value={{
+        isSignupModalOpen,
+        toggleSignupModal,
+        toggleLoginModal,
+        isLoginModalOpen,
+      }}
+    >
       {children}
     </ModalContext.Provider>
   );
