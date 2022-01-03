@@ -13,6 +13,7 @@ interface IModalProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
   size?: Sizes;
   onClose: () => void;
+  onOverlayClick?: () => void;
 }
 
 export const Modal = ({
@@ -20,6 +21,7 @@ export const Modal = ({
   children,
   size,
   onClose,
+  onOverlayClick,
   ...rest
 }: IModalProps) => {
   if (!isOpen) return null;
@@ -28,7 +30,7 @@ export const Modal = ({
     if (!size) return "60vw";
 
     const sizes = {
-      sm: "400px",
+      sm: "500px",
       md: "800px",
       lg: "1200px",
     };
@@ -38,10 +40,15 @@ export const Modal = ({
 
   return ReactDOM.createPortal(
     <>
-      <S.ModalOverlay />
+      <S.ModalOverlay
+        onClick={onOverlayClick}
+        aria-label="Modal Overlay, click to close Modal"
+      />
       <AnimateContainer animation="fadeIn">
         <S.ModalContent {...rest} size={changeModalSize()}>
-          <MdClose onClick={onClose} />
+          <S.CloseButton aria-label="Close Modal">
+            <MdClose aria-label="Close Modal" onClick={onClose} />
+          </S.CloseButton>
           {children}
         </S.ModalContent>
       </AnimateContainer>
