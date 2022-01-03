@@ -43,11 +43,23 @@
     "import/no-extraneous-dependencies": "off",
     "react/jsx-props-no-spreading": "off",
     "@typescript-eslint/no-explicit-any": "off",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "no-console": "off"
   },
   "settings": {
     "import/resolver": {
-      "typescript": {}
+      "node": {
+        "paths": [
+          "src"
+        ],
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx",
+          ".d.ts"
+        ]
+      }
     }
   },
   "overrides": [
