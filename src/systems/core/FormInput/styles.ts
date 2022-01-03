@@ -19,7 +19,7 @@ export const Container = styled.div<Input>`
       : props.theme.colors.gray_200};
     border-radius: 1rem;
     font-size: 0.9rem;
-    color: ${({ theme }) => theme.colors.black_primary};
+    color: ${({ theme }) => theme.colors.black_100};
     
 
     ::placeholder {

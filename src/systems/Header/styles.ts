@@ -39,7 +39,7 @@ export const NavLinks = styled.nav`
 export const Link = styled.a`
   display: block;
   font-weight: 700;
-  color: ${({ theme }) => theme.colors.black_primary};
+  color: ${({ theme }) => theme.colors.black_100};
   word-wrap: break-word;
   /* transition: transform 85ms ease-out; */
   font-size: 1rem;

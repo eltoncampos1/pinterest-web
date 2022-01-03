@@ -45,7 +45,7 @@ export const Header = () => {
           </Button>
           <Button
             onClick={() => toggleSignupModal()}
-            color={theme.colors.black_primary}
+            color={theme.colors.black_100}
             buttonBg={theme.colors.gray_100}
           >
             Sign up
