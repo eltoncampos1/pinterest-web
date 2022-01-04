@@ -15,7 +15,7 @@ const inputs = [
     placeholder: "Create a password",
   },
   {
-    type: "number",
+    type: "text",
     placeholder: "Age",
     errorMessage: "Ops...looks like you're not old enough yet",
   },
