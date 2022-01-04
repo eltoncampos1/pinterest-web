@@ -4,7 +4,7 @@ import theme from "../../../styles/theme";
 import { Button, ButtonProps } from ".";
 
 export default {
-  title: "Small Button",
+  title: "Button",
   component: Button,
 } as Meta;
 
