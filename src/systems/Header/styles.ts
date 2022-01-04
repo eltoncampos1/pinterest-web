@@ -20,7 +20,7 @@ export const LogoContainer = styled.a`
 export const PinName = styled.h1`
   font-size: 1.25rem;
   color: ${({ theme }) => theme.colors.red_primary};
-  margin-left: 0.5rem;
+  margin-left: 0.2rem;
 `;
 
 export const NavContainer = styled.div`
