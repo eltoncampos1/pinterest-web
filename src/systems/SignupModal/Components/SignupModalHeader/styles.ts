@@ -9,6 +9,7 @@ export const Header = styled.header`
   svg {
     font-size: 500px;
   }
+  margin-top: -2.5rem;
 `;
 
 export const Title = styled.h1`
@@ -16,6 +17,7 @@ export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.black_300};
   font-weight: 600;
   margin: 0.5rem 0;
+  letter-spacing: -1.2px;
 `;
 
 export const SubTitle = styled.h4`

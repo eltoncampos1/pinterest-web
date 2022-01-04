@@ -31,7 +31,7 @@ export const Form = styled.form`
   text-align: center;
 
   input {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.3rem;
   }
 
   span {

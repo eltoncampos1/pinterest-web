@@ -7,12 +7,12 @@ import * as S from "./styles";
 const inputs = [
   {
     type: "text",
-    placeholder: "Create a password",
+    placeholder: "Email",
     errorMessage: "Hmm...that doesn't look like an email address",
   },
   {
     type: "password",
-    placeholder: "Email",
+    placeholder: "Create a password",
   },
   {
     type: "number",
